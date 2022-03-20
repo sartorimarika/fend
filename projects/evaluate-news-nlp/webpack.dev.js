@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry: './src/client/index.js', // webpack uses this entry point, instead of the default
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',

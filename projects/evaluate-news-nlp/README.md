@@ -1,3 +1,8 @@
+- npm run bluid
+ non funziona, la cartella dist non viene creata e si creano errori, come se il file index.js non venisse trovato
+ - non tutti i pacchetti che sono da scaricare per il progetto vengono scaricati (si trovano nella pagina
+ delle istruzioni)
+
 # Project Instructions
 
 This repo is your starter code for the project. It is the same as the starter code we began with in lesson 2. Install and configure Webpack just as we did in the course. Feel free to refer to the course repo as you build this one, and remember to make frequent commits and to create and merge branches as necessary!
