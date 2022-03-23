@@ -8,6 +8,10 @@ app.use(express.static('dist'))
 
 console.log(__dirname)
 
+/* Setup API */
+var textapi = new aylien({
+    application_key: process.env.API_KEY,
+  });
 
 /* Dependencies */
 const bodyParser = require('body-parser')

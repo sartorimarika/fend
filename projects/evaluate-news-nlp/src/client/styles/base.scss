@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+$primary-color: #cfbaf0;
+$text-color: #0B132B;
+$background: #CADFE3;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $background;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
 }
 
 main {
@@ -11,4 +20,8 @@ main {
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+
+section, p {
+    color: $text-color;
 }

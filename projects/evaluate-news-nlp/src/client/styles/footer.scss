@@ -1,0 +1,15 @@
+@import 'base';
+
+footer {
+    background-color: $text-color;
+    display: flex;
+    justify-content: center;
+}
+
+footer
+    p, a{
+        color: $background;
+        font-size: 0.8rem;
+        font-weight: 300;
+        padding: 10px;
+    }
