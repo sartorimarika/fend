@@ -118,3 +118,12 @@ A great step to take with your finished project would be to deploy it! Unfortuna
 npm run start (or node ./src/server/index.js)
 http://localhost:8080
 npm run build-dev
+
+brew install node (or brew link node     brew link --overwrite node)
+(to install nvm)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+(switch to version 14 of node)
+nvm use 14

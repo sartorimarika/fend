@@ -11,3 +11,8 @@ console.log(checkForName);
 
 alert("I EXIST i am a index.js file in the client folder")
 console.log("CHANGE!!");
+
+export {
+    checkForName,
+    handleSubmit
+   }
