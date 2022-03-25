@@ -115,9 +115,15 @@ A great step to take with your finished project would be to deploy it! Unfortuna
 
 
 
-npm run start (or node ./src/server/index.js)
+
 http://localhost:8080
-npm run build-dev
+npm run build-dev  
+
+npm run build-prod
+http://localhost:8081
+
+npm run start (or node ./src/server/index.js)
+
 
 brew install node (or brew link node     brew link --overwrite node)
 (to install nvm)
