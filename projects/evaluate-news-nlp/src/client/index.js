@@ -9,7 +9,7 @@ import './styles/header.scss'
 
 console.log(checkForName);
 
-alert("I EXIST i am a index.js file in the client folder")
+//alert("I EXIST i am the index.js file in the client folder")
 console.log("CHANGE!!");
 
 export {

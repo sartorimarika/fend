@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>NPL Sentiment Analysis - App</title>
+        <script src="https://kit.fontawesome.com/6987e8c1a7.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -18,10 +19,21 @@
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
+
+            <form class="" onsubmit="return ClientLibrary.handleSubmit(event)">
+
+                <p>Write here some text you want to be analized:</p>
+
+                <!-- <div class="checkbox">
+                  <input id="text" name="format" value="txt"/>
+                  <label for="url">Text</label>
+                </div>
+                -->
+
+                <textarea required rows="3" column="auto" id="input-text" placeholder="Write something"></textarea>
+                <input class="cta" type="submit" value="Analyse" onsubmit="return ClientLibrary.handleSubmit(event)" />
+            </form>
+
             </section>
 
             <section>
@@ -32,6 +44,7 @@
 
         <footer>
             <p><a href="./">Marika Sartori</a>| Front End Development Nanodegree @ Udacity</p>
+            <i class="fab fa-github"><a href="https://github.com/sartorimarika"></a></i>
         </footer>
         <script>
                // Check that service workers are supported
@@ -39,7 +52,7 @@
                    // Use the window load event to keep the page load performant
                    window.addEventListener('load', () => {
                        navigator.serviceWorker.register('/service-worker.js').then(registraion=>{
-                           console.log('registraion is successful')
+                           console.log('registration to Service Worker is successful')
                        });
                    });
                }

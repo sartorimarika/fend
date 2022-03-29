@@ -113,6 +113,13 @@ Once you are hooked up to the Aylien API, you are most of the way there! Along w
 A great step to take with your finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
 
 
+in index.html
+                <!--<form class="" onsubmit="return handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            -->
+
 
 
 
@@ -124,6 +131,7 @@ http://localhost:8081
 
 npm run start (or node ./src/server/index.js)
 
+npm run test
 
 brew install node (or brew link node     brew link --overwrite node)
 (to install nvm)
