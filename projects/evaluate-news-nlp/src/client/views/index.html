@@ -20,7 +20,7 @@
         <main>
             <section>
 
-            <form class="" onsubmit="return ClientLibrary.handleSubmit(event)">
+            <form class="" onsubmit="return Client.handleSubmit(event)">
 
                 <p>Write here some text you want to be analized:</p>
 
@@ -31,7 +31,7 @@
                 -->
 
                 <textarea required rows="3" column="auto" id="input-text" placeholder="Write something"></textarea>
-                <input class="cta" type="submit" value="Analyse" onsubmit="return ClientLibrary.handleSubmit(event)" />
+                <input class="cta" type="submit" value="Analyse" onsubmit="return Client.handleSubmit(event)" onclick="return Client.handleSubmit(event)" />
             </form>
 
             </section>
@@ -51,7 +51,7 @@
                if ('serviceWorker' in navigator) {
                    // Use the window load event to keep the page load performant
                    window.addEventListener('load', () => {
-                       navigator.serviceWorker.register('/service-worker.js').then(registraion=>{
+                       navigator.serviceWorker.register('/service-worker.js').then(registration=>{
                            console.log('registration to Service Worker is successful')
                        });
                    });
