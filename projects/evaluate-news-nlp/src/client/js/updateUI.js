@@ -9,9 +9,9 @@ function updateUI(data) {
       resultsHTML = `
                   <div>
                   <h1>Our analysis show that:</h1>
-                  <p></i>The polarity of different elements of the text are in <span>${data.agreement.toLowerCase()}</span></p>
-                  <p></i>The text is prevalently <span>${data.subjectivity.toLowerCase()}</span> and <span>${data.irony.toLowerCase()}</span></p>
-                  <p></i>We are <span>${data.confidence.toLowerCase()}%</span> confident about these resulst</p>
+                  <p><The polarity of different elements of the text are in <span>${data.agreement.toLowerCase()}</span></p>
+                  <p><The text is prevalently <span>${data.subjectivity.toLowerCase()}</span> and <span>${data.irony.toLowerCase()}</span></p>
+                  <p><We are <span>${data.confidence.toLowerCase()}%</span> confident about these resulst</p>
                   </div>`;
     } else {
       resultsHTML = `
